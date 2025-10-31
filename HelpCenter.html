@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - Toko Nexus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/asset/css/HelpCenter.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-4 px-lg-5">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="foto/logo.png" alt="Toko Nexus Logo" class="logo-img me-2">
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav d-flex flex-row gap-3 gap-lg-4 mx-auto">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Store</a>
+                    <a class="nav-link" href="#">Reviews</a>
+                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link d-flex align-items-center gap-1" href="#">
+                        Support
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </div>
+
+                <!-- Search -->
+                <div class="search-container position-relative ms-lg-3">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <i class="bi bi-search search-icon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background Gradients -->
+    <div class="bg-gradient-conic"></div>
+    <div class="bg-ellipse bg-ellipse-1"></div>
+    <div class="bg-ellipse bg-ellipse-2"></div>
+    <div class="bg-ellipse bg-ellipse-3"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Help Center</h1>
+            <p class="hero-subtitle">Your Gaming Top-Up Guide</p>
+        </div>
+    </section>
+
+    <!-- How Can We Help Section -->
+    <section class="help-section">
+        <div class="container">
+            <h2 class="section-title gradient-text">How Can We Help?</h2>
+            <p class="section-description">
+                Stuck on something? No worries — we've got you covered. Whether you're topping up for the first time or checking our policies, everything you need is right here.
+            </p>
+
+            <div class="row g-4 justify-content-center mt-5">
+                <!-- Guides Tile -->
+                <div class="col-md-4">
+                    <a href="#guides" class="help-tile d-block text-decoration-none">
+                        <i class="bi bi-book icon-large"></i>
+                        <h3 class="tile-title">Guides</h3>
+                    </a>
+                </div>
+
+                <!-- FAQ Tile -->
+                <div class="col-md-4">
+                    <a href="#faq" class="help-tile d-block text-decoration-none">
+                        <div class="faq-icon">
+                            <span>A</span><span>Q</span>
+                        </div>
+                        <h3 class="tile-title">FAQ</h3>
+                    </a>
+                </div>
+
+                <!-- Terms Tile -->
+                <div class="col-md-4">
+                    <a href="#terms" class="help-tile d-block text-decoration-none">
+                        <i class="bi bi-file-text icon-large"></i>
+                        <h3 class="tile-title">Terms & Policies</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides" class="accordion-section">
+        <div class="container">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="section-heading me-4">Guides</h2>
+                <hr class="section-divider flex-grow-1">
+            </div>
+
+            <div class="accordion-wrapper">
+                <div class="accordion-item active" data-accordion="guides">
+                    <div class="accordion-header">
+                        <span class="accordion-question">How long does it take for my top-up to be delivered?</span>
+                        <i class="bi bi-dash accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Most top-ups are processed instantly and will appear in your account within seconds. In rare cases, it may take a few minutes depending on the payment method.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="guides">
+                    <div class="accordion-header">
+                        <span class="accordion-question">What payment methods do you support?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>We support various payment methods including credit cards, debit cards, digital wallets, and bank transfers.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="guides">
+                    <div class="accordion-header">
+                        <span class="accordion-question">Is it safe to top up through this website?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>Yes, our website uses secure encryption and trusted payment gateways to ensure your transactions are safe.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="guides">
+                    <div class="accordion-header">
+                        <span class="accordion-question">What should I do if my top-up hasn't arrived?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>Please contact our support team with your transaction ID and we'll investigate immediately.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="guides">
+                    <div class="accordion-header">
+                        <span class="accordion-question">Do you offer promotions or bonuses?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>Yes, we regularly offer promotions and bonuses. Check our News section for the latest deals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="accordion-section">
+        <div class="container">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="section-heading me-4">Frequently Asked Questions</h2>
+                <hr class="section-divider flex-grow-1">
+            </div>
+
+            <div class="accordion-wrapper">
+                <div class="accordion-item active" data-accordion="faq">
+                    <div class="accordion-header">
+                        <span class="accordion-question">How long does it take for my top-up to be delivered?</span>
+                        <i class="bi bi-dash accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Most top-ups are processed instantly and will appear in your account within seconds. In rare cases, it may take a few minutes depending on the payment method.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="faq">
+                    <div class="accordion-header">
+                        <span class="accordion-question">What payment methods do you support?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>We support various payment methods including credit cards, debit cards, digital wallets, and bank transfers.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="faq">
+                    <div class="accordion-header">
+                        <span class="accordion-question">Is it safe to top up through this website?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>Yes, our website uses secure encryption and trusted payment gateways to ensure your transactions are safe.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="faq">
+                    <div class="accordion-header">
+                        <span class="accordion-question">What should I do if my top-up hasn't arrived?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>Please contact our support team with your transaction ID and we'll investigate immediately.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="faq">
+                    <div class="accordion-header">
+                        <span class="accordion-question">Do you offer promotions or bonuses?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>Yes, we regularly offer promotions and bonuses. Check our News section for the latest deals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms & Policies Section -->
+   <section id="terms" class="accordion-section terms-section">
+        <div class="container">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="section-heading me-4">Terms & Policies</h2>
+                <hr class="section-divider flex-grow-1">
+            </div>
+
+            <div class="accordion-wrapper">
+                <div class="accordion-item active" data-accordion="terms">
+                    <div class="accordion-header">
+                        <span class="accordion-question">How long does it take for my top-up to be delivered?</span>
+                        <i class="bi bi-dash accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Most top-ups are processed instantly and will appear in your account within seconds. In rare cases, it may take a few minutes depending on the payment method.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="terms">
+                    <div class="accordion-header">
+                        <span class="accordion-question">What payment methods do you support?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>We support various payment methods including credit cards, debit cards, digital wallets, and bank transfers.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="terms">
+                    <div class="accordion-header">
+                        <span class="accordion-question">Is it safe to top up through this website?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>Yes, our website uses secure encryption and trusted payment gateways to ensure your transactions are safe.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="terms">
+                    <div class="accordion-header">
+                        <span class="accordion-question">What should I do if my top-up hasn't arrived?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>Please contact our support team with your transaction ID and we'll investigate immediately.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-accordion="terms">
+                    <div class="accordion-header">
+                        <span class="accordion-question">Do you offer promotions or bonuses?</span>
+                        <i class="bi bi-plus accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content d-none">
+                        <p>Yes, we regularly offer promotions and bonuses. Check our News section for the latest deals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row g-4 mb-4">
+                <!-- Column 1: About -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="foto/logo.png" alt="Toko Nexus Logo" class="logo-img me-2">
+                    </div>
+                    <p class="footer-description">
+                        We're gamers building for gamers delivering fast, secure, and reliable top-ups so you can stay focused on the game.
+                    </p>
+                </div>
+
+                <!-- Column 2: Explore -->
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Most Top-Up Games</a></li>
+                        <li><a href="#">Promotions</a></li>
+                        <li><a href="#">How to Top Up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Resources -->
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <h5 class="footer-heading">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Guides & Tutorials</a></li>
+                        <li><a href="#">Terms & Policies</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Community -->
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h5 class="footer-heading">Community</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- Social Media Icons -->
+            <div class="d-flex justify-content-center justify-content-lg-end gap-3 mt-4">
+                <a href="#" class="social-icon" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="social-icon" aria-label="Discord"><i class="bi bi-discord"></i></a>
+                <a href="#" class="social-icon" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                <a href="#" class="social-icon" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/asset/js/HelpCenter.js"></script>
+</body>
+</html>
+
