@@ -1,0 +1,634 @@
+:root {
+    --bg-primary: #000000;
+    --bg-gradient-start: #0a0a1a;
+    --bg-gradient-end: #00134d;
+    --card-bg: rgba(74, 144, 226, 0.1);
+    --text-white: #ffffff;
+    --text-light-blue: #6aa8ff;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --success-green: #4ade80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a1a;
+    background-image: url(../foto/94.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a1a;
+    background-image: url(../foto/94.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-white);
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    padding: 30px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+}
+
+/* Success Header */
+.success-header {
+    text-align: center;
+    margin-bottom: 28px;
+    animation: fadeUp 600ms ease-out both;
+}
+
+.success-icon-container {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 16px;
+    background-color: #2C2C3A;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-icon {
+    font-size: 50px;
+    color: var(--success-green);
+}
+
+.success-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.success-message {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 6px;
+    opacity: 0.9;
+}
+
+.success-submessage {
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+/* Transaction Card */
+.transaction-card {
+    max-width: 600px;
+    margin: 0 auto 24px;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.15) 0%, rgba(74, 144, 226, 0.05) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 26px;
+    backdrop-filter: blur(10px);
+    animation: fadeUp 600ms ease-out both 120ms;
+}
+
+/* Items Section */
+.items-section {
+    margin-bottom: 20px;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.transaction-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.transaction-item-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.transaction-item-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.transaction-item-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.transaction-item-price {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.transaction-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    border: none;
+    margin: 20px 0;
+}
+
+/* Transaction Details */
+.transaction-details {
+    margin-bottom: 20px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.detail-row:last-of-type {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+
+.detail-value {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: right;
+}
+
+.status-completed {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--success-green) !important;
+}
+
+.status-icon {
+    font-size: 15px;
+    color: var(--success-green);
+}
+
+/* Disclaimer Note */
+.disclaimer-note {
+    font-size: 12px;
+    color: var(--text-light-blue);
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeUp 600ms ease-out both 240ms;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.success-icon {
+    animation: pulseScale 1.1s ease-in-out 1 both;
+}
+@keyframes pulseScale {
+    0% { transform: scale(0.7); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.btn-back-store,
+.btn-contact-support {
+    flex: 1;
+    max-width: 250px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-back-store {
+    background-color: #2C2C3A;
+    color: #ffffff;
+    border: 1px solid var(--border-color);
+}
+
+.btn-back-store:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-contact-support {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid var(--border-color);
+}
+
+.btn-contact-support:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-back-store:active,
+.btn-contact-support:active {
+    transform: translateY(0);
+}
+
+/* Responsive - Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    html {
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #0a0a1a;
+        background-image: url(../foto/94.png);
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    body {
+        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
+        width: 100%;
+        padding: 30px 30px;
+        background-color: #0a0a1a;
+        background-image: url(../foto/94.png);
+        background-size: 100% 140%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .success-header {
+        margin-bottom: 24px;
+    }
+
+    .success-icon-container {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 18px;
+    }
+
+    .success-icon {
+        font-size: 54px;
+    }
+
+    .success-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .success-message {
+        font-size: 15px;
+    }
+
+    .success-submessage {
+        font-size: 13px;
+    }
+
+    .transaction-card {
+        padding: 28px 24px;
+        margin-bottom: 24px;
+    }
+
+    .transaction-item-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .transaction-item-text,
+    .transaction-item-price {
+        font-size: 14px;
+    }
+
+    .detail-label,
+    .detail-value {
+        font-size: 13px;
+    }
+
+    .action-buttons {
+        gap: 16px;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    html {
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #0a0a1a;
+        background-image: url(../foto/94.png);
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        overflow-x: hidden;
+    }
+
+    body {
+        height: 100%;
+        min-height: 100vh;
+        width: 100%;
+        padding: 25px 15px;
+        background-color: #0a0a1a;
+        background-image: url(../foto/94.png);
+        background-size: 100% 140%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        justify-content: flex-start;
+    }
+
+    .success-header {
+        margin-bottom: 24px;
+    }
+
+    .success-icon-container {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 16px;
+    }
+
+    .success-icon {
+        font-size: 44px;
+    }
+
+    .success-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .success-message {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .success-submessage {
+        font-size: 12px;
+    }
+
+    .transaction-card {
+        padding: 22px 18px;
+        margin-bottom: 24px;
+        max-width: 100%;
+    }
+
+    .items-section {
+        margin-bottom: 18px;
+    }
+
+    .transaction-item {
+        margin-bottom: 12px;
+    }
+
+    .transaction-item-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .transaction-item-text,
+    .transaction-item-price {
+        font-size: 13px;
+    }
+
+    .transaction-divider {
+        margin: 18px 0;
+    }
+
+    .transaction-details {
+        margin-bottom: 18px;
+    }
+
+    .detail-row {
+        margin-bottom: 10px;
+    }
+
+    .detail-label,
+    .detail-value {
+        font-size: 12px;
+    }
+
+    .status-icon {
+        font-size: 13px;
+    }
+
+    .disclaimer-note {
+        font-size: 11px;
+        margin-top: 16px;
+        padding-top: 14px;
+        line-height: 1.4;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    .btn-back-store,
+    .btn-contact-support {
+        max-width: 100%;
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #0a0a1a;
+        background-image: url(../foto/94.png);
+        background-size: 100% 140%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        overflow-x: hidden;
+    }
+
+    body {
+        height: 100%;
+        min-height: 100vh;
+        width: 100%;
+        padding: 20px 12px;
+        background-color: #0a0a1a;
+        background-image: url(../foto/94.png);
+        background-size: 100% 140%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    .success-header {
+        margin-bottom: 20px;
+    }
+
+    .success-icon-container {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 14px;
+    }
+
+    .success-icon {
+        font-size: 38px;
+    }
+
+    .success-title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .success-message {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+
+    .success-submessage {
+        font-size: 11px;
+    }
+
+    .transaction-card {
+        padding: 18px 14px;
+        margin-bottom: 20px;
+    }
+
+    .items-section {
+        margin-bottom: 16px;
+    }
+
+    .transaction-item {
+        margin-bottom: 10px;
+    }
+
+    .transaction-item-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .transaction-item-content {
+        gap: 10px;
+    }
+
+    .transaction-item-text,
+    .transaction-item-price {
+        font-size: 12px;
+    }
+
+    .transaction-divider {
+        margin: 16px 0;
+    }
+
+    .transaction-details {
+        margin-bottom: 16px;
+    }
+
+    .detail-row {
+        margin-bottom: 8px;
+    }
+
+    .detail-label,
+    .detail-value {
+        font-size: 11px;
+    }
+
+    .status-icon {
+        font-size: 12px;
+    }
+
+    .disclaimer-note {
+        font-size: 10px;
+        margin-top: 14px;
+        padding-top: 12px;
+    }
+
+    .action-buttons {
+        gap: 8px;
+    }
+
+    .btn-back-store,
+    .btn-contact-support {
+        padding: 11px 20px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1025px) {
+    html {
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #0a0a1a;
+        background-image: url(foto/94.png);
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    body {
+        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
+        width: 100%;
+        background-color: #0a0a1a;
+        background-image: url(foto/94.png);
+        background-size: 100% 140%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+

@@ -9,6 +9,303 @@
     --active-gradient-bottom: rgba(255, 255, 255, 0.10);
     --border-color: rgba(255, 255, 255, 0.35);
     --text-light: rgba(255, 255, 255, 0.6);
+    --text-white: #ffffff;
+}
+
+/* Navbar CSS */
+.navbar {
+    background: transparent;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    color: var(--text-white) !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+.fallback-logo {
+    display: none;
+}
+
+.fallback-logo.show {
+    display: inline;
+}
+
+.navbar-nav {
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-white) !important;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #6aa8ff !important;
+}
+
+/* Dropdown Menu Styling */
+.navbar-nav .dropdown-menu {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px;
+    padding: 8px 0;
+    margin-top: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    min-width: 180px;
+}
+
+.navbar-nav .dropdown-item {
+    color: var(--text-white) !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: rgba(74, 144, 226, 0.2);
+    color: #6aa8ff !important;
+}
+
+.navbar-nav .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-nav .dropdown-toggle i {
+    transition: transform 0.3s;
+}
+
+.navbar-nav .dropdown-toggle[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+ /* Dropdown Mobile Styling */
+@media (max-width: 992px) {
+    .navbar-nav .dropdown-menu {
+        background: rgba(0, 0, 0, 0.3) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 8px;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    .navbar-nav .dropdown-item {
+        padding: 12px 20px;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
+
+.search-container {
+    width: 196px;
+    height: 38px;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.06) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    padding: 8px 35px 8px 15px;
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.search-input::placeholder {
+    color: var(--text-white);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--text-white);
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-white);
+    font-size: 18px;
+}
+
+.navbar .container-fluid {
+    padding-top: 0;
+    margin: 0;
+    position: relative;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 0.5rem;
+    background: transparent;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-collapse {
+    margin-top: 0.5rem;
+}
+
+/* Reset default navbar-collapse styling untuk desktop */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin-top: 0;
+        box-shadow: none;
+    }
+}
+
+/* Navbar Mobile Responsive */
+@media (max-width: 768px) {
+    /* Navbar Mobile - Reset flex direction */
+    .navbar-nav.d-flex.flex-row {
+        flex-direction: column !important;
+        gap: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .navbar-nav .nav-link {
+        width: 100%;
+        display: block;
+        padding: 14px 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-white) !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-nav .nav-link:first-child {
+        border-top: none;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        background-color: transparent;
+        color: #6aa8ff !important;
+    }
+    
+    .navbar-nav .nav-link.d-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px 20px;
+        text-align: center;
+    }
+    
+    /* Chevron icon menjadi satu kesatuan dengan Support di tengah */
+    .navbar-nav .nav-link.d-flex i {
+        font-size: 14px;
+        opacity: 0.8;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .navbar-nav .nav-link.d-flex:hover {
+        color: #6aa8ff !important;
+    }
+    
+    .navbar-nav .nav-link.d-flex:hover i {
+        color: #6aa8ff;
+        opacity: 1;
+    }
+    
+    .navbar-collapse {
+        width: 100%;
+        max-width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 12px;
+        box-sizing: border-box;
+        margin-top: 16px;
+        padding: 12px 0 16px 0;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    
+    .navbar-collapse .navbar-nav {
+        margin-bottom: 0;
+    }
+    
+    .search-container {
+        width: calc(100% - 40px);
+        margin: 16px auto 0 auto;
+        padding: 0;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    /* Container fluid padding untuk mobile */
+    .navbar .container-fluid {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    /* Navbar toggler styling untuk mobile */
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.4);
+        padding: 0.4rem 0.6rem;
+    }
 }
 
 * {
@@ -31,101 +328,6 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-}
-
-/* Navbar */
-.navbar {
-    background: transparent;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    z-index: 999;
-    transition: all 0.3s ease;
-}
-
-.navbar.scrolled {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.navbar .container-fluid {
-    padding-top: 0;
-    margin: 0;
-    position: relative;
-}
-
-.navbar-brand {
-    color: var(--white) !important;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.logo-img {
-    width: auto;
-    height: 40px;
-    object-fit: contain;
-}
-
-.logo-text {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.navbar-nav {
-    position: relative;
-}
-
-.navbar-nav .nav-link {
-    color: var(--white) !important;
-    font-weight: 700;
-    font-size: 20px;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #6aa8ff !important;
-}
-
-.search-container {
-    width: 196px;
-    height: 38px;
-}
-
-.search-input {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.06) 100%);
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    padding: 8px 35px 8px 15px;
-    color: var(--white);
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-}
-
-.search-input::placeholder {
-    color: var(--white);
-}
-
-.search-input:focus {
-    outline: none;
-    border-color: var(--white);
-}
-
-.search-icon {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--white);
-    font-size: 18px;
 }
 
 /* Background Gradients */
@@ -650,7 +852,7 @@ textarea.form-control {
     z-index: 1;
     text-align: center;
     background-color: #00134d;
-    background-image: url(foto/94.png);
+    background-image: url(/foto/94.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -665,7 +867,7 @@ textarea.form-control {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(foto/94.png);
+    background-image: url(/foto/94.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -787,7 +989,7 @@ textarea.form-control {
 
 /* Hanya Terms & Policies yang memakai background-image */
 .accordion-section.terms-section {
-    background-image: url(foto/94.png);
+    background-image: url(/foto/94.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -933,21 +1135,6 @@ textarea.form-control {
     color: #6aa8ff;
 }
 
-/* Navbar Toggler Custom */
-.navbar-toggler {
-    border: 1px solid var(--border-color);
-    padding: 0.5rem;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-collapse {
-    padding: 1rem;
-    border-radius: 10px;
-    margin-top: 0.5rem;
-}
 
 /* Responsive - Laptop/Desktop Large */
 @media (max-width: 1400px) {
@@ -1141,20 +1328,6 @@ textarea.form-control {
         padding: 50px 0;
     }
     
-    .navbar-nav {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-    
-    .search-container {
-        width: 100%;
-        margin-top: 1rem;
-    }
-    
-    .search-input {
-        width: 100%;
-    }
     
     .bg-ellipse {
         display: block;
@@ -1202,16 +1375,6 @@ textarea.form-control {
 
 /* Responsive - Mobile Large */
 @media (max-width: 768px) {
-    
-    .navbar {
-        padding: 0.5rem 0;
-    }
-    
-    .logo-icon {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
-    }
     
     .logo-text {
         font-size: 16px;
@@ -1465,16 +1628,6 @@ textarea.form-control {
 
 /* Responsive - Mobile Small */
 @media (max-width: 576px) {
-    .navbar-brand {
-        font-size: 14px;
-    }
-    
-    .logo-icon {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
-    }
-    
     .logo-text {
         font-size: 14px;
     }
@@ -1669,70 +1822,6 @@ textarea.form-control {
     }
 }
 
-@media (max-width: 992px) {
-    .navbar-collapse .navbar-nav {
-        text-align: center;
-        padding: 1rem 0;
-    }
-    
-    .navbar-collapse .search-container {
-        margin: 1rem auto 0;
-        max-width: 300px;
-    }
-
-    /* Rapikan posisi toggle & area menu saat collapse di mobile */
-    .navbar .container-fluid {
-        display: flex;
-        align-items: center;
-    }
-    .navbar-toggler {
-        margin-left: auto;
-    }
-    .navbar-collapse {
-        width: 100%;
-        max-width: 100vw;
-        background: rgba(0, 0, 0, 0.35);
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        border: 1px solid var(--border-color);
-        box-sizing: border-box;
-        margin: 0;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .navbar .navbar-collapse .navbar-nav {
-        display: flex;
-        flex-direction: column !important;
-        align-items: stretch;
-        gap: 0 !important;
-        width: 100%;
-    }
-    .navbar .navbar-collapse .navbar-nav .nav-link {
-        width: 100%;
-    }
-    /* Tata ulang nav-links agar rapi di mobile */
-    .navbar-nav {
-        gap: 0;
-        width: 100%;
-    }
-    .navbar-nav .nav-link {
-        width: 100%;
-        display: block;
-        padding: 12px 8px;
-        text-align: center;
-        font-size: 18px;
-        border-top: 1px solid var(--border-color);
-        border-radius: 0;
-    }
-    /* Pusatkan nav-link yang pakai d-flex (Support) */
-    .navbar-nav .nav-link.d-flex {
-        display: flex;
-        justify-content: center;
-    }
-    .navbar-nav .nav-link:first-child {
-        border-top: none;
-    }
-}
 
 @media (max-width: 768px) {
     .help-section .row {
@@ -1745,11 +1834,6 @@ textarea.form-control {
     
     .accordion-item {
         margin-bottom: 15px;
-    }
-    /* Skala tipografi nav di mobile sedang */
-    .navbar-nav .nav-link {
-        font-size: 16px;
-        padding: 12px 10px;
     }
 }
 
@@ -1777,11 +1861,6 @@ textarea.form-control {
     
     .social-icon {
         margin: 0 5px;
-    }
-    /* Skala tipografi nav di mobile kecil */
-    .navbar-nav .nav-link {
-        font-size: 15px;
-        padding: 12px 12px;
     }
 }
 

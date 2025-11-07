@@ -1,14 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Navbar Kembali effect
-    const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+    // Navbar scroll effect is handled by navbar.js
     
     // Accordion functionality
     const accordionItems = document.querySelectorAll('.accordion-item');
@@ -55,19 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
+    // Smooth scroll for anchor links is handled by navbar.js
     
     // Contact Form Submission
     const contactForm = document.getElementById('contactForm');
