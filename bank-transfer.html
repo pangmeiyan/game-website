@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Transfer Payment - Toko Nexus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="asset/css/bank-transfer.css">
+     <link rel="shortcut icon" href="foto/logo 2.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="checkout-header">
+        <div class="container">
+            <h1 class="checkout-title">Complete Your Payment</h1>
+            <p class="checkout-subtitle">
+                Complete your order by transferring the exact amount to the bank details below. Once confirmed, your credits will be delivered immediately.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="checkout-container">
+        <div class="checkout-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Pay with Bank Transfer Section -->
+                <div class="payment-card-section">
+                    <h2 class="section-title">Pay with Bank Transfer</h2>
+                    <p class="section-subtitle">Enter Your Details</p>
+                    
+                    <div class="form-group">
+                        <label for="bank" class="form-label">Bank</label>
+                        <input type="text" id="bank" class="form-input" placeholder="Select or enter bank name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="accountName" class="form-label">Account Name</label>
+                        <input type="text" id="accountName" class="form-input" placeholder="Enter account name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="accountNumber" class="form-label">Account Number</label>
+                        <input type="text" id="accountNumber" class="form-input" placeholder="Enter account number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reference" class="form-label">Reference</label>
+                        <input type="text" id="reference" class="form-input" placeholder="Enter reference number">
+                    </div>
+                </div>
+
+                <!-- How To Pay Section -->
+                <div class="how-to-pay">
+                    <h3 class="how-to-pay-title">How To Pay With Bank Transfer</h3>
+                    <ol class="how-to-pay-list">
+                        <li class="how-to-pay-item">Open your online banking or visit an ATM.</li>
+                        <li class="how-to-pay-item">Enter the bank details and transfer the amount shown.</li>
+                        <li class="how-to-pay-item">Return here and click "I Have Paid" to confirm.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Right Column - Order Summary -->
+            <div class="right-column">
+                <div class="order-summary">
+                    <h2 class="order-summary-title">Order Summary</h2>
+                    <p class="order-summary-subtitle">Your Order</p>
+                    <hr class="order-divider">
+                    
+                    <!-- Order Items -->
+                    <div class="order-items">
+                        <div class="order-item">
+                            <div class="order-item-content">
+                                <img src="foto/diamond3.png" alt="300 Diamonds" class="order-item-icon">
+                                <span class="order-item-text">300 Diamonds</span>
+                            </div>
+                            <span class="order-item-price">Rp50.000</span>
+                        </div>
+                        
+                        <div class="order-item">
+                            <div class="order-item-content">
+                                <img src="foto/diamond1.png" alt="25 Diamonds" class="order-item-icon">
+                                <span class="order-item-text">25 Diamonds</span>
+                            </div>
+                            <span class="order-item-price">Rp10.000</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Total Price -->
+                    <div class="order-total">
+                        <span class="total-label">Total Price :</span>
+                        <span class="total-price">Rp60.000</span>
+                    </div>
+                </div>
+                
+                <!-- I Have Paid Button -->
+                <a class="btn-have-paid d-inline-block text-center" href="confirmation.html" style="text-decoration:none;">I Have Paid</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/bank-transfer.js"></script>
+</body>
+</html>
+

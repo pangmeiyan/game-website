@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful - Toko Nexus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="asset/css/confirmation.css">
+     <link rel="shortcut icon" href="foto/logo 2.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Success Header -->
+    <div class="success-header">
+        <div class="success-icon-container">
+            <i class="bi bi-check-circle-fill success-icon"></i>
+        </div>
+        <h1 class="success-title">Payment Successful!</h1>
+        <p class="success-message">Your top-up is complete, your Credits are on their way!</p>
+        <p class="success-submessage">Delivery usually takes just a few seconds.</p>
+    </div>
+
+    <!-- Transaction Summary Card -->
+    <div class="transaction-card">
+        <!-- Items Purchased -->
+        <div class="items-section">
+            <div class="transaction-item">
+                <div class="transaction-item-content">
+                    <img src="foto/diamond3.png" alt="300 Diamonds" class="transaction-item-icon">
+                    <span class="transaction-item-text">300 Diamonds</span>
+                </div>
+                <span class="transaction-item-price">Rp50.000</span>
+            </div>
+            
+            <div class="transaction-item">
+                <div class="transaction-item-content">
+                    <img src="foto/diamond1.png" alt="25 Diamonds" class="transaction-item-icon">
+                    <span class="transaction-item-text">25 Diamonds</span>
+                </div>
+                <span class="transaction-item-price">Rp10.000</span>
+            </div>
+        </div>
+
+        <hr class="transaction-divider">
+
+        <!-- Transaction Details -->
+        <div class="transaction-details">
+            <div class="detail-row">
+                <span class="detail-label">Game</span>
+                <span class="detail-value">Mobile Legends</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Player ID</span>
+                <span class="detail-value">12356789</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Package</span>
+                <span class="detail-value">300 + 25 Diamonds</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Payment Method</span>
+                <span class="detail-value">E-Wallet</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Order ID</span>
+                <span class="detail-value">#123456789</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Status</span>
+                <span class="detail-value status-completed">
+                    <i class="bi bi-check-circle-fill status-icon"></i>
+                    Completed
+                </span>
+            </div>
+        </div>
+
+        <!-- Disclaimer Note -->
+        <p class="disclaimer-note">
+            Didn't receive your credits yet? Don't worry, sometimes it takes a few extra minutes depending on the game server.
+        </p>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button class="btn-back-store" id="backStoreBtn">Back to Store</button>
+        <button class="btn-contact-support" id="contactSupportBtn">Contact Support</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/confirmation.js"></script>
+</body>
+</html>
+
