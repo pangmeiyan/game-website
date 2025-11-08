@@ -3,86 +3,73 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Toko Nexus</title>
+    <title>Home - Toko Nexus</title>
     <link rel="shortcut icon" href="/asset/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/asset/img/" type="image/x-icon">
     <!-- style css -->
     <link rel="stylesheet" href="./asset/css/index.css">
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/a8bee61608.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <!-- glide js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
-
   </head>
-  <body>
+  <body class="lh-base">
 
-  <!-- navbar -->
-  <nav class="navbarr">
-    <div class="container navbar-container">
-      
-      <!-- ===== LOGO ===== -->
-      <a href="index.html" class="navbar-logo">
-        <img src="/asset/img/logo.png" class="img-fluid" style="width: 25px;">
-        <span class="navbar-logo-icon">Toko</span> Nexus
-      </a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-4 px-lg-5">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/asset/img/logo-nav.png" alt="Toko Nexus Logo" class="logo-img me-2" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+        </a>
 
-      <!-- ===== HAMBURGER (MOBILE) ===== -->
-      <button class="navbar-toggle" id="mobile-menu-toggle">
-       <i class="fa-solid fa-bars"></i>
-      </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- ===== MENU & SEARCH ===== -->
-      <ul class="navbar-menu" id="navbar-menu-content">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Store</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">News</a></li>
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav d-flex flex-row gap-3 gap-lg-4 mx-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="store.html">Store</a>
+                <a class="nav-link" href="reviews.html">Reviews</a>
+                <a class="nav-link" href="news.html">News</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link d-flex align-items-center gap-1 dropdown-toggle" href="#" id="supportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Support
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="supportDropdown">
+                        <li><a class="dropdown-item" href="HelpCenter.html">Help Center</a></li>
+                        <li><a class="dropdown-item" href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
 
-       <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <!-- ===== SEARCH (MOBILE) ===== -->
-        <li class="search-item-mobile">
-          <div class="search-container">
-            <form action="#">
-              <input type="text" class="search-input" placeholder="Search">
-              <button type="submit" class="search-button">
-                <!-- Ikon SVG Magnifying Glass -->
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 
-                          12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 
-                          25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 
-                          208 0S416 93.1 416 208zM208 352a144 144 0 1 0 
-                          0-288 144 144 0 1 0 0 288z"/>
-                </svg>
-              </button>
-            </form>
-          </div>
-        </li>
-      </ul>
-
+            <!-- Search -->
+            <div class="search-container position-relative ms-lg-3">
+                <input type="text" class="search-input" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+        </div>
     </div>
   </nav>
-  <!-- end navbar -->
+  <!-- Navbar end -->
 
   <!-- hero section -->
   <div class="container-fluid hero-section positon-relative d-flex justify-content-center text-center">
     <div class="container py-5">
-      <h1 class="hero-title gradient-text display-1 font-inter fw-bold">Top Up Your Game , Instantly</h1>
+      <h1 class="hero-title gradient-text display-3 font-inter fw-bold">Top Up Your Game , Instantly</h1>
       <p class="hero-sub gradient-text fs-5 fw-medium py-2 font-inter"> Fast, secure, and hassle-free top-ups for your favorite games anytime, anywhere.</p>
       <button class="btn btn1-custom">
-        <a href="#" class="text-decoration-none text-white">Top Up Now</a>
+        <a href="GameDetail.html" class="text-decoration-none text-white">Top Up Now</a>
       </button>
       
       <!-- up 768px  -->
@@ -104,7 +91,7 @@
         </div>
       </div>
       <!-- under 768px -->
-      <div class="swiper mySwiperr mobile-cards">
+      <div class="swiper mySwiper mobile-cards">
         <div class="swiper-wrapper">
           <div class="swiper-slide swiper-mobile"><img src="/asset/img/game1.png" alt="Game 1"></div>
           <div class="swiper-slide swiper-mobile"><img src="/asset/img/game2.png" alt="Game 2"></div>
@@ -128,11 +115,11 @@
           <h1 class="most-popular-title text-white font-inter fw-bold">Most Popular Top-Ups</h1>
           <p class="most-popular-sub font-inter text-white fw-normal py-2">Check out the games our players love topping up the most. From battle arenas to RPG worlds, we’ve got the hottest titles ready for you.</p>
           <button class="btn btn1-custom">
-            <a href="#" class="text-decoration-none text-white">See More  </a>
+            <a href="store.html" class="text-decoration-none text-white">See More  </a>
           </button>
         </div>
         <div class="col-sm-12 col-md-7 col-xl-7 mt-md-0 mt-4">
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiperr">
             <div class="swiper-wrapper">
               <div class="swiper-slide p-3 rounded-3">
                 <img src="/asset/img/game1.png" alt="" class="rounded-1">
@@ -150,7 +137,7 @@
                 <img src="/asset/img/game5.png" alt="" class="rounded-1">
               </div>
             </div>
-            <div class="swiper-pagination lol"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div> 
 
@@ -165,25 +152,33 @@
       <h1 class="gradient-text font-inter display-3 fw-bold text-center py-5">Top Up in 4 Easy Steps</h1>
       <div class="row d-flex align-items-center justify-content-center">
         <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center">
-          <i class="fa-solid fa-gamepad step display-1 text-white"></i>
+          <div class="step-img d-flex justify-content-center align-items-center">
+            <img src="/asset/img/game-controller.png" alt="">
+          </div>
           <p class="font-inter text-white fw-bold mt-4">Choose your game from our library.</p>
         </div>
-         <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center mt-md-0 mt-4">
-           <i class="fa-solid fa-id-card step display-1 text-white"></i>
+        <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center mt-md-0 mt-4">
+          <div class="step-img d-flex justify-content-center align-items-center">
+            <img src="/asset/img/id.png" alt="">
+          </div>
           <p class="font-inter text-white fw-bold mt-4">Enter your Player ID and server details.</p>
         </div>
-         <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center mt-md-0 mt-4">
-           <i class="fa-solid fa-coins step display-1 text-white"></i>
-          <p class="font-inter text-white fw-bold mt-4">Select the amount of credits or items you want.</p>
+        <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center mt-md-0 mt-4">
+          <div class="step-img d-flex justify-content-center align-items-center">
+            <img src="/asset/img/profit.png" alt="">
+          </div>
+          <p class="font-inter text-white fw-bold mt-4">Select the amount of items you want.</p>
         </div>
-         <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center mt-md-0 mt-4">
-          <i class="fa-solid fa-wallet step display-1 text-white"></i>
-          <p class="font-inter text-white fw-bold mt-4">Pay securely and enjoy instant delivery.</p>
+        <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center mt-md-0 mt-4">
+          <div class="step-img d-flex justify-content-center align-items-center">
+            <img src="/asset/img/wallet.png" alt="">
+          </div>
+          <p class="font-inter text-white fw-bold mt-4">Pay securely and instant delivery.</p>
         </div>
       </div>
       <div class="d-flex justify-content-center mt-3">
         <button class="btn btn1-custom">
-          <a href="#" class="text-decoration-none text-white">Top Up Now</a>
+          <a href="" class="text-decoration-none text-white">Top Up Now</a>
         </button>
       </div>
     </div>
@@ -193,8 +188,8 @@
   <!-- why choose us -->
   <div class="container-fluid why positon-relative">
     <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-sm-12 col-md-6 col-xl-6">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-12 col-xl-6">
           <h1 class="fw-bold display-3 font-inter text-white">Why Gamers Choose Us</h1>
           <ul class="text-white font-inter fw-normal py-3">
             <li class="py-1">Instant Delivery – No waiting, your credits arrive in seconds.</li>
@@ -203,7 +198,7 @@
             <li class="py-1">Exclusive Rewards – Enjoy special discounts and bonuses every month.</li>
           </ul>
         </div>
-        <div class="col-sm-12 col-md-6 col-xl-6 why-chara mt-md-0 mt-4">
+        <div class="col-sm-12 col-md-12 col-xl-6 why-chara mt-md-0 mt-4">
           <img src="/asset/img/why-chara.png" alt="">
         </div>
       </div>
@@ -336,7 +331,7 @@
   </div>
   <!-- What Players Say end -->
 
-  <!-- faqs -->
+  <!-- faqs dan get in touch  -->
   <div class="container-fluid faqs position-relative">
     <div class="container py-5">
       <h1 class="gradient-text font-inter text-center fw-bold display-3 py-3">Frequently Asked Questions</h1>
@@ -410,44 +405,101 @@
       </div>
 
     </div>
+
+    <div class="container mt-5">
+      <h1 class="font-inter display-3 fw-bold text-white text-center">Get in Touch</h1>
+        <p class="fw-normal font-inter text-white text-center">Need help or have questions? We’re here for you 24/7.</p>
+        <div class="row d-flex justify-content-center align-items-center text-center py-5">
+          <div class="col-6 col-md-2 sosial mt-4 mt-md-0 d-flex align-items-center flex-column">
+            <a href="#" class="text-decoration-none">
+              <i class="fa-brands fa-instagram text-white"></i>
+            </a>
+            <p class="mt-4 font-inter fw-normal">Instagram</p>
+          </div>
+          <div class="col-6 col-md-2 sosial mt-4 mt-md-0 d-flex align-items-center flex-column">
+            <a href="#" class="text-decoration-none">
+              <i class="fa-brands fa-facebook text-white"></i>
+            </a>
+            <p class="mt-4 font-inter fw-normal">Facebook</p>
+          </div>
+          <div class="col-6 col-md-2 sosial mt-4 mt-md-0 d-flex align-items-center flex-column">
+            <a href="#" class="text-decoration-none">
+              <i class="fa-brands fa-tiktok text-white"></i>
+            </a>
+            <p class="mt-4 font-inter fw-normal">TikTok</p>
+          </div>
+          <div class="col-6 col-md-2 sosial mt-4 mt-md-0 d-flex align-items-center flex-column">
+            <a href="#" class="text-decoration-none">
+              <i class="fa-brands fa-whatsapp text-white"></i>
+            </a>
+            <p class="mt-4 font-inter fw-normal">WhatsApp</p>
+          </div>
+          <div class="col-6 col-md-2 sosial mt-4 mt-md-0 d-flex align-items-center flex-column">
+            <a href="#" class="text-decoration-none">
+              <i class="fa-brands fa-discord text-white"></i>
+            </a>
+            <p class="mt-4 font-inter fw-normal">Discord</p>
+          </div>
+        </div>
+    </div>
+
   </div>
-  <!-- faqs end -->
+  <!-- faqs and get in touch end -->
   
-  <!-- get in touch -->
-  <div class="container-fluid get-in position-relative">
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-sm-12 col-md-2 col-xl-2 sosial">
-          <a href="#">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+  <!-- footer -->
+  <div class="container-fluid footer position-relative py-5">
+    <div class="container">
+      <div class="row align-items-start footer-con pb-4">
+        <div class="col-sm-12 col-md-4 col-xl-4 mb-4 mb-md-0">
+          <img src="/asset/img/logo-nav.png" alt="Logo" style="width: 100px;">
+          <p class="mt-4 font-inter fw-normal" style="font-size: 16px;">
+          We’re gamers building for gamers, delivering fast, secure, and reliable top-ups so you can stay focused on the game and your victory. 
+          </p>
         </div>
-        <div class="col-sm-12 col-md-2 col-xl-2 sosial mt-md-0 mt-4">
-          <a href="#">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
+
+        <div class="col-sm-12 col-md-2 col-xl-2 mb-4 mb-md-0 footer-link">
+          <h6 class="fw-bold font-inter mb-3">Explore</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Store</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Most Top-Up Games</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Promotions</a></li>
+            <li><a href="#" class="text-decoration-none text-white">How to Top Up</a></li>
+          </ul>
         </div>
-         <div class="col-sm-12 col-md-2 col-xl-2 sosial mt-md-0 mt-4">
-          <a href="#">
-            <i class="fa-brands fa-discord"></i>
-          </a>
+
+        <div class="col-sm-12 col-md-2 col-xl-2 mb-4 mb-md-0 footer-link">
+          <h6 class="fw-bold font-inter mb-3">Resources</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-white">FAQ</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Guides & Tutorials</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Terms & Policies</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Refund Policy</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Help Center</a></li>
+          </ul>
         </div>
-         <div class="col-sm-12 col-md-2 col-xl-2 sosial mt-md-0 mt-4">
-          <a href="#">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
+
+        <div class="col-sm-12 col-md-2 col-xl-2 mb-4 mb-md-0 footer-link">
+          <h6 class="fw-bold font-inter mb-3">Community</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-white">Discord</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Facebook</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Instagram</a></li>
+            <li><a href="#" class="text-decoration-none text-white">TikTok</a></li>
+            <li><a href="#" class="text-decoration-none text-white">Contact Us</a></li>
+          </ul>
         </div>
-         <div class="col-sm-12 col-md-2 col-xl-2 sosial mt-md-0 mt-4">
-          <a href="#">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
-        </div>
+      </div>
+
+      <div class="footer-icon mt-3">
+        <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-discord fa-2x"></i></a>
+        <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+        <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-pinterest fa-2x"></i></a>
       </div>
     </div>
   </div>
-  <!-- get in touch end -->
-  
-
+  <!-- footer end -->
 
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -458,25 +510,6 @@
         spaceBetween: 20,
         autoplay: {
           delay: 2000, 
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          320: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 2.5 },
-          1280: { slidesPerView: 2.5 }
-        }
-      });
-
-      // most popular top ups
-      var swiper = new Swiper(".mySwiperr", {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        autoplay: {
-          delay: 2500, 
         },
         pagination: {
           el: ".swiper-pagination",
@@ -505,6 +538,25 @@
           spaceBetween: 25,
         },
       },
+      });
+
+      // most popular top ups
+      var swiper = new Swiper(".mySwiperr", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        autoplay: {
+          delay: 2500, 
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 2.5 },
+          1280: { slidesPerView: 2.5 }
+        }
       });
 
     // testi
@@ -550,8 +602,6 @@
       }
       }).mount();
     </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
 
     <script src="./asset/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

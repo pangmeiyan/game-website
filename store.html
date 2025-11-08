@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Store - Toko Nexus</title>
+    <link rel="shortcut icon" href="/asset/img/logo.png" type="image/x-icon">
+    <!-- style css -->
+    <link rel="stylesheet" href="./asset/css/store.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/a8bee61608.js" crossorigin="anonymous"></script>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <!-- glide js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    </head>
+    <body style="background: rgba(1, 1, 3)" class="lh-base">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-4 px-lg-5">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/asset/img/logo-nav.png" alt="Toko Nexus Logo" class="logo-img me-2" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav d-flex flex-row gap-3 gap-lg-4 mx-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="store.html">Store</a>
+                    <a class="nav-link" href="reviews.html">Reviews</a>
+                    <a class="nav-link" href="news.html">News</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link d-flex align-items-center gap-1 dropdown-toggle" href="#" id="supportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Support
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="supportDropdown">
+                            <li><a class="dropdown-item" href="HelpCenter.html">Help Center</a></li>
+                            <li><a class="dropdown-item" href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Search -->
+                <div class="search-container position-relative ms-lg-3">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- hero section -->
+    <div class="container-fluid hero-section positon-relative d-flex justify-content-center text-center">
+    <div class="container py-5">
+        <h1 class="hero-title gradient-text display-3 font-inter fw-bold">Choose Your Game</h1>
+        <p class="hero-sub gradient-text fs-5 fw-medium py-2 font-inter">Browse our collection of the hottest games. Whether you’re into mobile MOBAs, RPGs, shooters, or strategy we’ve got you covered.</p>
+    </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- by popularity -->
+    <div class="container-fluid popular position-relative">
+        <div class="container">
+            <div class="editor-title d-flex align-items-center">
+                <h3 class="fw-bold text-white mb-0">Editor’s Picks for You</h3>
+                <span class="editor-line"></span>
+            </div>
+
+            <div class="row py-4">
+                <div class="col-sm-12 col-md-3 col-xl-3">
+                    <img src="/asset/img/game6.png" class="img-fluid h-100 rounded-1 pop-card">
+                </div>
+                <div class="col-sm-12 col-md-3 col-xl-3 mt-md-0 mt-4">
+                    <img src="/asset/img/game4.png" class="img-fluid h-100 rounded-1 pop-card">
+                </div>
+                <div class="col-sm-12 col-md-3 col-xl-3 mt-md-0 mt-4">
+                    <img src="/asset/img/game2.png" class="img-fluid h-100 rounded-1 pop-card">
+                </div>
+                <div class="col-sm-12 col-md-3 col-xl-3 mt-md-0 mt-4">
+                    <img src="/asset/img/game3.png" class="img-fluid h-100 rounded-1 pop-card">
+                </div>
+            </div>
+
+            <div class="collapse" id="collapseExample">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-xl-3">
+                        <img src="/asset/img/game6.png" class="img-fluid h-100 rounded-1 pop-card">
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-xl-3 mt-md-0 mt-4">
+                        <img src="/asset/img/game4.png" class="img-fluid h-100 rounded-1 pop-card">
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-xl-3 mt-md-0 mt-4">
+                        <img src="/asset/img/game2.png" class="img-fluid h-100 rounded-1 pop-card">
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-xl-3 mt-md-0 mt-4">
+                        <img src="/asset/img/game3.png" class="img-fluid h-100 rounded-1 pop-card">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center py-3">
+                <button class="btn1-custom text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Show All
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- by popularity end -->
+
+    <!-- by genre -->
+    <div class="container-fluid genre position-relative py-5">
+        <div class="container">
+            <div class="editor-title d-flex justify-content-between align-items-center flex-wrap">
+                <h3 class="fw-bold text-white">By Genre</h3>
+            <div class="category-nav">
+                <button class="btn-filter active" data-filter="all">All Category</button>
+                <button class="btn-filter" data-filter="moba">Moba</button>
+                <button class="btn-filter" data-filter="btl">Battle Royale</button>
+                <button class="btn-filter" data-filter="rpg">RPG</button>
+                <button class="btn-filter" data-filter="fps">FPS</button>
+                <button class="btn-filter" data-filter="vcr">Voucher</button>
+            </div>
+            </div>
+
+            <!-- Game Cards -->
+            <div class="row g-4 mt-1 justify-content-center">
+            <div class="col-sm-12 col-md-3 game-card" data-genre="moba">
+                <img src="/asset/img/game7.png" class="img-fluid rounded-1 h-100">
+            </div>
+
+            <div class="col-sm-12 col-md-3 game-card" data-genre="btl">
+                <img src="/asset/img/game8.png" class="img-fluid rounded-1 h-100">
+            </div>
+
+            <div class="col-sm-12 col-md-3 game-card" data-genre="rpg">
+                <img src="/asset/img/game1.png" class="img-fluid rounded-1 h-100">
+            </div>
+
+            <div class="col-sm-12 col-md-3 game-card" data-genre="fps">
+                <img src="/asset/img/game9.png" class="img-fluid rounded-1 h-100">
+            </div>
+
+            <div class="col-sm-12 col-md-3 game-card" data-genre="vcr">
+                <img src="/asset/img/game10.png" class="img-fluid rounded-1 h-100">
+            </div>
+
+            <div class="col-sm-12 col-md-3 game-card" data-genre="moba">
+                <img src="/asset/img/game11.png" class="img-fluid rounded-1 h-100">
+            </div>
+
+            <div class="col-sm-12 col-md-3 game-card" data-genre="btl">
+                <img src="/asset/img/game5.png" class="img-fluid rounded-1 h-100">
+            </div>
+
+            <div class="col-sm-12 col-md-3 game-card" data-genre="rpg">
+                <img src="/asset/img/game12.png" class="img-fluid rounded-1 h-100">
+            </div>
+            </div>
+
+
+            <div class="collapse" id="showAllContainer">
+                <div class="row g-4 mt-1">
+                    <div class="col-sm-12 col-md-3 col-xl-3 game-card" data-genre="rpg">
+                        <img src="/asset/img/game1.png" class="img-fluid rounded-1 h-100">
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-xl-3 game-card" data-genre="moba">
+                        <img src="/asset/img/game11.png" class="img-fluid rounded-1 h-100">
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-xl-3 game-card" data-genre="btl">
+                        <img src="/asset/img/game8.png" class="img-fluid rounded-1 h-100">
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-xl-3 game-card" data-genre="fps">
+                        <img src="/asset/img/game9.png" class="img-fluid rounded-1 h-100">
+                    </div>
+
+                        
+                </div>
+                <div class="row g-4 mt-1">
+                    <div class="col-sm-12 col-md-3 col-xl-3 game-card" data-genre="rpg">
+                            <img src="/asset/img/game12.png" class="img-fluid rounded-1 h-100">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-xl-3 game-card" data-genre="btl">
+                            <img src="/asset/img/game5.png" class="img-fluid rounded-1 h-100">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-xl-3 game-card" data-genre="moba">
+                            <img src="/asset/img/game7.png" class="img-fluid rounded-1 h-100">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-xl-3 game-card" data-genre="vcr">
+                            <img src="/asset/img/game10.png" class="img-fluid rounded-1 h-100">
+                        </div>
+                </div>
+            </div>
+
+            <!-- Show All Button -->
+            <div class="d-flex justify-content-center align-items-center show mt-4">
+                <button class="btn btn1-custom text-white" type="button" data-bs-toggle="collapse" data-bs-target="#showAllContainer" aria-expanded="false" aria-controls="showAllContainer">
+                    Show All
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- by genre end -->
+
+    <!-- top up in 4 easy steps -->
+    <div class="container-fluid easy-steps positon-relative ">
+        <div class="container py-5">
+        <h1 class="gradient-text font-inter display-3 fw-bold text-center py-5">Top Up in 4 Easy Steps</h1>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center">
+            <div class="step-img d-flex justify-content-center align-items-center">
+                <img src="/asset/img/game-controller.png" alt="">
+            </div>
+            <p class="font-inter text-white fw-bold mt-4">Choose your game from our library.</p>
+            </div>
+            <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center mt-md-0 mt-4">
+            <div class="step-img d-flex justify-content-center align-items-center">
+                <img src="/asset/img/id.png" alt="">
+            </div>
+            <p class="font-inter text-white fw-bold mt-4">Enter your Player ID and server details.</p>
+            </div>
+            <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center mt-md-0 mt-4">
+            <div class="step-img d-flex justify-content-center align-items-center">
+                <img src="/asset/img/profit.png" alt="">
+            </div>
+            <p class="font-inter text-white fw-bold mt-4">Select the amount of items you want.</p>
+            </div>
+            <div class="col-sm-12 col-md-3 col-xl-3 d-flex flex-column align-items-center text-center mt-md-0 mt-4">
+            <div class="step-img d-flex justify-content-center align-items-center">
+                <img src="/asset/img/wallet.png" alt="">
+            </div>
+            <p class="font-inter text-white fw-bold mt-4">Pay securely and instant delivery.</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <button class="btn btn1-custom">
+            <a href="#" class="text-decoration-none text-white">Top Up Now</a>
+            </button>
+        </div>
+        </div>
+    </div>
+    <!-- top up in 4 easy steps end -->
+
+    <!-- footer -->
+    <div class="container-fluid footer position-relative py-5">
+        <div class="container py-5">
+        <div class="row align-items-start footer-con pb-4 py-5">
+            <div class="col-sm-12 col-md-4 col-xl-4 mb-4 mb-md-0">
+            <img src="/asset/img/logo-nav.png" alt="Logo" style="width: 100px;">
+            <p class="mt-4 font-inter fw-normal" style="font-size: 16px;">
+            We’re gamers building for gamers, delivering fast, secure, and reliable top-ups so you can stay focused on the game and your victory. 
+            </p>
+            </div>
+
+            <div class="col-sm-12 col-md-2 col-xl-2 mb-4 mb-md-0 footer-link">
+            <h6 class="fw-bold font-inter mb-3">Explore</h6>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Store</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Most Top-Up Games</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Promotions</a></li>
+                <li><a href="#" class="text-decoration-none text-white">How to Top Up</a></li>
+            </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-2 col-xl-2 mb-4 mb-md-0 footer-link">
+            <h6 class="fw-bold font-inter mb-3">Resources</h6>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-white">FAQ</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Guides & Tutorials</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Terms & Policies</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Refund Policy</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Help Center</a></li>
+            </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-2 col-xl-2 mb-4 mb-md-0 footer-link">
+            <h6 class="fw-bold font-inter mb-3">Community</h6>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-white">Discord</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Facebook</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Instagram</a></li>
+                <li><a href="#" class="text-decoration-none text-white">TikTok</a></li>
+                <li><a href="#" class="text-decoration-none text-white">Contact Us</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="footer-icon mt-3">
+            <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+            <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-discord fa-2x"></i></a>
+            <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+            <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-pinterest fa-2x"></i></a>
+        </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+
+
+
+
+
+
+   <script src="./asset/js/index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

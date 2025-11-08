@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>News Detail - Toko Nexus</title>
+      <link rel="shortcut icon" href="/asset/img/logo.png" type="image/x-icon">
+      <!-- style css -->
+      <link rel="stylesheet" href="./asset/css/news-detail.css">
+      <!-- bootstrap css -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- icon -->
+      <script src="https://kit.fontawesome.com/a8bee61608.js" crossorigin="anonymous"></script>
+      <!-- swiper js -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+      <!-- glide js -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+   </head>
+   <body style="background: #111827;" class="lh-base font-inter">
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid px-4 px-lg-5">
+         <!-- Logo -->
+         <a class="navbar-brand d-flex align-items-center" href="#">
+               <img src="/asset/img/logo-nav.png" alt="Toko Nexus Logo" class="logo-img me-2" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');">
+         </a>
+
+         <!-- Mobile Menu Toggle -->
+         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <!-- Nav Links -->
+         <div class="collapse navbar-collapse" id="navbarNav">
+               <div class="navbar-nav d-flex flex-row gap-3 gap-lg-4 mx-auto">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="store.html">Store</a>
+                  <a class="nav-link" href="reviews.html">Reviews</a>
+                  <a class="nav-link" href="news.html">News</a>
+                  <div class="nav-item dropdown">
+                     <a class="nav-link d-flex align-items-center gap-1 dropdown-toggle" href="#" id="supportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Support
+                           <i class="fa-solid fa-chevron-down"></i>
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="supportDropdown">
+                           <li><a class="dropdown-item" href="HelpCenter.html">Help Center</a></li>
+                           <li><a class="dropdown-item" href="ContactUs.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <!-- Search -->
+               <div class="search-container position-relative ms-lg-3">
+                  <input type="text" class="search-input" placeholder="Search">
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+               </div>
+         </div>
+      </div>
+   </nav>
+   <!-- Navbar end -->
+
+   <!-- breadcrumbs -->
+   <div class="container-fluid" style="margin-top: 100px;">
+      <div class="container">
+         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+               <li class="breadcrumb-item"><a href="news.html">News</a></li>
+               <li class="breadcrumb-item active fw-bold text-white" aria-current="page">Genshin Impact News</li>
+            </ol>
+         </nav>
+      </div>
+   </div>
+
+   <!-- content -->
+   <div class="container-fluid blog-header position-relative">
+      <div class="container">
+         <img src="/asset/img/fresh-blog1.png" alt="" class="w-100 h-100 img-fluid rounded-1">
+         <h1 class="text-white font-inter display-4 fw-bold py-3">Why Players are Loving the New Genshin Impact Patch</h1>
+         <p class="col-bw font-inter fw-normal">The latest update brings exciting new characters, deeper storylines, and fresh events. Players are jumping back in to explore new content and unlock exclusive rewards.</p>
+
+         <!-- news info -->
+         <div class="news-info d-flex">
+            <div class="date me-3 col-bw">
+               <i class="fa-solid fa-calendar"></i>
+               <span class="ms-1">January 15, 2025</span>
+            </div>
+            <div class="time mx-3 col-bw">
+               <i class="fa-solid fa-clock"></i>
+               <span class="ms-1">4 min read</span>
+            </div>
+            <div class="views mx-3 col-bw">
+               <i class="fa-solid fa-eye"></i>
+               <span class="ms-1">2,450 views</span>
+            </div>
+         </div>
+
+         <hr class="col-bw mt-4">
+
+         <!-- tag -->
+         <div class="tag-container d-flex py-2">
+            <div class="tag me-2 rounded-pill px-3 py-1">
+               <h6 class="mt-2">#RPG</h6>
+            </div>
+            <div class="tag mx-2 rounded-pill px-3 py-1">
+               <h6 class="mt-2">#Open World</h6>
+            </div>
+            <div class="tag mx-2 rounded-pill px-3 py-1">
+               <h6 class="mt-2">#Fantasy</h6>
+            </div>
+         </div>
+
+         <!-- share icon -->
+         <div class="share-container d-flex py-3">
+            <div class="share me-2 d-flex justify-content-center align-items-center rounded-pill">
+               <i class="fa-brands fa-facebook fs-5"></i>
+            </div>
+            <div class="share mx-2 d-flex justify-content-center align-items-center rounded-pill">
+               <i class="fa-brands fa-whatsapp fs-5"></i>
+            </div>
+            <div class="share mx-2 d-flex justify-content-center align-items-center rounded-pill">
+               <i class="fa-brands fa-twitter fs-5"></i>
+            </div>
+            <div class="share mx-2 d-flex justify-content-center align-items-center rounded-pill">
+               <i class="fa-brands fa-tiktok fs-5"></i>
+            </div>
+
+         </div>
+
+         <!-- main content -->
+         <div class="content-container">
+            <div class="section-1">
+               <h1 class="text-white fw-bold font-inter fs-2">Why Players are Loving the New Genshin Impact Patch</h1>
+               <p class="col-bw font-inter fw-normal lh-lg">The newest Genshin Impact patch has once again reminded the community why this open-world RPG continues to dominate the gaming scene. Every major update feels like a carefully crafted experience, and this one is no exception. Players are thrilled to see how HoYoverse keeps blending storytelling, exploration, and innovation in ways that feel both refreshing and familiar.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">This patch not only brings new characters and events, but also major improvements to performance and combat balance. Many fans appreciate the smoother frame rates, better elemental interactions, and the return of long-requested features like improved co-op modes. For veterans, it’s a nostalgic revival; for new players, it’s the perfect time to start their journey in Teyvat.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">What truly makes this patch special is how it respects the game’s roots while introducing meaningful innovation. Rather than overwhelming players, it gradually leads them into new regions and narratives, ensuring that every discovery feels earned and rewarding.</p>
+            </div>
+
+            <div class="section-2">
+               <h1 class="text-white fw-bold font-inter fs-2">New Playable Characters and Their Unique Abilities</h1>
+               <p class="col-bw font-inter fw-normal lh-lg">One of the most exciting highlights of the update is the debut of two new playable characters, each bringing something new to the battlefield. The first character, a 5-star elemental powerhouse, introduces an ability that changes the tempo of combat — making every encounter feel dynamic and unpredictable. The second, a 4-star support hero, focuses on team synergy, enhancing healing and energy regeneration in ways that open up countless new strategies.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">Players have been quick to test these new characters in Spiral Abyss and cooperative domains. The synergy between these new heroes and existing ones has completely reshaped the meta. Build guides, artifact recommendations, and elemental combo videos are flooding YouTube and TikTok as the community experiments with new ways to maximize their potential.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">What’s even more impressive is how HoYoverse ties character lore into gameplay mechanics. Each new hero isn’t just powerful — they feel alive, with stories, emotions, and motivations that make players connect with them beyond just numbers and abilities.</p>
+            </div>
+
+            <div class="section-3">
+               <h1 class="text-white fw-bold font-inter fs-2">Deeper Storylines and Expanding the World of Teyvat</h1>
+               <p class="col-bw font-inter fw-normal lh-lg">The storytelling in this patch has reached a new level of emotional depth. The Archon Quests expand on long-standing mysteries and provide meaningful character development for both newcomers and beloved heroes. The voice acting, music, and visual direction elevate the narrative experience, making every cutscene feel like a cinematic masterpiece.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">Travelers are especially captivated by the new region introduced in this update — a lush, atmospheric area filled with hidden puzzles, new enemies, and local legends. Exploration feels rewarding, with every chest and secret offering lore snippets that deepen the understanding of Teyvat’s history.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">Fans have praised HoYoverse for creating a world that never stops evolving. Even after hundreds of hours, players still find themselves surprised by new interactions, hidden quests, and environmental storytelling that make the world feel truly alive.</p>
+            </div>
+
+            <div class="section-4">
+               <h1 class="text-white fw-bold font-inter fs-2">Engaging Limited-Time Events and Rewards</h1>
+               <p class="col-bw font-inter fw-normal lh-lg">No Genshin Impact update would be complete without events — and this patch delivers some of the most enjoyable ones yet. The new limited-time event combines storytelling with gameplay variety, featuring puzzle challenges, co-op boss fights, and even a special music rhythm mode that has become a fan favorite.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">Completing these events rewards players with generous Primogems, exclusive weapon blueprints, and character cosmetics that can’t be obtained anywhere else. Many players say these events strike the perfect balance between fun and challenge — not too easy, but rewarding enough to keep participation high.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">Themed events also bring the community together. Whether it’s sharing team setups, completing tasks together, or just exploring event maps with friends, the sense of connection and collaboration keeps players coming back daily.</p>
+            </div>
+
+            <div class="section-5">
+               <h1 class="text-white fw-bold font-inter fs-2">Community Hype and the Patch’s Lasting Legacy</h1>
+               <p class="col-bw font-inter fw-normal lh-lg">The excitement surrounding this patch can be felt across every platform. Twitter, Reddit, and Discord servers are filled with fan art, memes, and discussions about character builds and story theories. It’s more than just an update — it’s a global event where millions of players experience and celebrate new content together.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">Streamers and content creators have seen huge engagement spikes, with fans eager to watch reactions, pulls, and live explorations of the new region. The collective joy of the community shows just how deeply Genshin Impact has embedded itself in modern gaming culture.</p>
+               <p class="col-bw font-inter fw-normal lh-lg">Ultimately, this patch proves that HoYoverse continues to refine its formula for success — balancing nostalgia with innovation, challenge with accessibility, and story with gameplay. It’s a clear sign that Genshin Impact isn’t slowing down anytime soon. With each update, the world of Teyvat grows richer, more emotional, and more magical — and that’s exactly why players continue to love it.</p>
+            </div>
+         </div>
+
+         <!-- content you might like -->
+         <section class="you-might-like my-5">
+            <div class="container">
+               <h2 class="text-center mb-4 text-white fw-semibold font-inter">Explore Other News</h2>
+
+               <!-- Swiper -->
+               <div class="swiper youMightLikeSwiper">
+                  <div class="swiper-wrapper">
+                     <!-- Slide 1 -->
+                     <div class="swiper-slide">
+                        <div class="blog-card">
+                           <img src="/asset/img/news-editor1.png" alt="New Genshin Patch" class="blog-img">
+                           <div class="blog-content">
+                              <h5>Exploring Fontaine: The Hydro Nation’s Secrets</h5>
+                              <p>Discover the wonders of Fontaine and meet its unique citizens with hydro-based technology.</p>
+                              <a href="news-detail.html" class="read-more">Read More →</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Slide 2 -->
+                     <div class="swiper-slide">
+                        <div class="blog-card">
+                           <img src="/asset/img/news-editor2.png" alt="Genshin Events" class="blog-img">
+                           <div class="blog-content">
+                              <h5>Top 5 Events Returning in Genshin Impact 2025</h5>
+                              <p>Fan-favorite events are making a comeback — here’s what you can expect and how to prepare.</p>
+                              <a href="news-detail.html" class="read-more">Read More →</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Slide 3 -->
+                     <div class="swiper-slide">
+                        <div class="blog-card">
+                           <img src="/asset/img/fresh-blog3.png" alt="Best Genshin Teams" class="blog-img">
+                           <div class="blog-content">
+                              <h5>Best Team Compositions After the Latest Update</h5>
+                              <p>Build the most powerful teams with the new meta characters and synergy tips from top players.</p>
+                              <a href="news-detail.html" class="read-more">Read More →</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Slide 4 -->
+                     <div class="swiper-slide">
+                        <div class="blog-card">
+                           <img src="/asset/img/fresh-blog4.png" alt="Genshin Story Update" class="blog-img">
+                           <div class="blog-content">
+                              <h5>The Hidden Lore Behind the New Story Quest</h5>
+                              <p>Uncover the mysteries that connect the latest Archon quest with Teyvat’s forgotten history.</p>
+                              <a href="news-detail.html" class="read-more">Read More →</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Swiper Pagination & Navigation -->
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+               </div>
+            </div>
+         </section>
+
+      </div>
+   </div>
+
+   <!-- footer -->
+   <div class="container-fluid footer position-relative py-5">
+      <div class="container">
+         <div class="row align-items-start footer-con pb-4">
+            <div class="col-sm-12 col-md-4 col-xl-4 mb-4 mb-md-0">
+               <img src="/asset/img/logo-nav.png" alt="Logo" style="width: 100px" />
+               <p class="mt-4 font-inter fw-normal" style="font-size: 16px">We’re gamers building for gamers, delivering fast, secure, and reliable top-ups so you can stay focused on the game and your victory.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-2 col-xl-2 mb-4 mb-md-0 footer-link">
+               <h6 class="fw-bold font-inter mb-3">Explore</h6>
+               <ul class="list-unstyled">
+               <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Store</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Most Top-Up Games</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Promotions</a></li>
+               <li><a href="#" class="text-decoration-none text-white">How to Top Up</a></li>
+               </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-2 col-xl-2 mb-4 mb-md-0 footer-link">
+               <h6 class="fw-bold font-inter mb-3">Resources</h6>
+               <ul class="list-unstyled">
+               <li><a href="#" class="text-decoration-none text-white">FAQ</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Guides & Tutorials</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Terms & Policies</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Refund Policy</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Help Center</a></li>
+               </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-2 col-xl-2 mb-4 mb-md-0 footer-link">
+               <h6 class="fw-bold font-inter mb-3">Community</h6>
+               <ul class="list-unstyled">
+               <li><a href="#" class="text-decoration-none text-white">Discord</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Facebook</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Instagram</a></li>
+               <li><a href="#" class="text-decoration-none text-white">TikTok</a></li>
+               <li><a href="#" class="text-decoration-none text-white">Contact Us</a></li>
+               </ul>
+            </div>
+        </div>
+
+         <div class="footer-icon mt-3">
+            <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+            <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-discord fa-2x"></i></a>
+            <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+            <a href="#" class="text-decoration-none px-3"><i class="fa-brands fa-pinterest fa-2x"></i></a>
+         </div>
+      </div>
+   </div>
+   <!-- footer end -->
+
+
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script>
+      const swiper = new Swiper('.youMightLikeSwiper', {
+         slidesPerView: 1,
+         spaceBetween: 20,
+         loop: true,
+         pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+         },
+         navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+         },
+         breakpoints: {
+            768: {
+               slidesPerView: 2,
+            },
+            1024: {
+               slidesPerView: 3,
+            },
+         },
+      });
+   </script>
+   <script src="./asset/js/index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
